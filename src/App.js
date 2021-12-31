@@ -3,6 +3,7 @@ import './App.css';
 import HomePage from './pages/homepage/homepage.component';
 import { Route, Routes , Link} from 'react-router-dom';
 import ShopPage from './pages/shop/shop.component';
+import Header from './components/header/header.component';
 
 const About = (props) => {
   console.log(props)
@@ -11,13 +12,7 @@ const About = (props) => {
 function App() {
   return (
     <>
-        <Link to="/">Home Page</Link>
-        <div>
-          <Link to="/about">About</Link>
-        </div>
-        <div>
-          <Link to="/shop">Shop</Link>
-        </div>
+      <Header/>
       <Routes>
         <Route exact path="/" element={<HomePage/>} />
         <Route path="/about" element={<About/>} />
