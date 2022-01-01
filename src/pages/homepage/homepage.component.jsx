@@ -5,7 +5,6 @@ import {Route} from 'react-router-dom';
 
 const HomePage = ({history}) => (
     <div className='homepage'>
-        {console.log(history)}
         <Directory/>
     </div>
 );
